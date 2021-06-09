@@ -43235,7 +43235,7 @@ J:function(a,b){var s=null,r=K.M(b),q=t.p
 return M.cq(C.u,s,new T.dT(C.a9,s,s,M.cw(s,new T.b8(C.an,b.a0(t.w).f.a.a<800?T.dW(H.a([new T.b8(C.ub,new A.zZ(s),s),new A.vQ(s)],q),C.H,C.N,C.Z):T.e3(H.a([new T.li(1,C.d6,new A.zZ(s),s),new T.li(1,C.d6,new A.vQ(s),s)],q),C.H,C.N,C.Z),s),s,new S.aA(0,1024,0,1/0),s,s,s,s,s),s),C.t,r.q.e,0,s,s,s,s,C.R)}}
 A.vQ.prototype={
 J:function(a,b){var s=null,r=K.jL(30),q=K.M(b),p=K.jL(20)
-return new T.b8(C.ui,T.hO(M.cw(s,M.cq(C.u,r,new T.b8(C.uj,new T.El(0.44117647058823534,M.cq(C.u,p,new U.ny(M.asW(s,s,new L.py("screenshot.jpg",s,s)),s,C.fZ,!0,s),C.b7,s,0,s,s,s,s,C.R),s),s),C.b7,q.q.a,8,s,s,s,s,C.R),s,new S.aA(0,1/0,0,640),s,s,s,s,s),s,s),s)}}
+return new T.b8(C.ui,T.hO(M.cw(s,M.cq(C.u,r,new T.b8(C.uj,new T.El(0.44117647058823534,M.cq(C.u,p,new U.ny(M.asW(s,s,new L.py("assets/screenshot.jpg",s,s)),s,C.fZ,!0,s),C.b7,s,0,s,s,s,s,C.R),s),s),C.b7,q.q.a,8,s,s,s,s,C.R),s,new S.aA(0,1/0,0,640),s,s,s,s,s),s,s),s)}}
 A.zZ.prototype={
 km:function(){var s,r=window.navigator.userAgent.toLowerCase()
 if(C.b.w(r,"iphone"))return"iOS"
@@ -43262,7 +43262,7 @@ $0:function(){return T.mC(u.B)},
 $S:0}
 A.LP.prototype={
 J:function(a,b){var s=null,r=K.M(b),q=t.p
-return M.cq(C.u,s,new T.dT(C.a9,s,s,M.cw(s,T.e3(H.a([new T.b8(C.bV,T.e3(H.a([M.cq(C.u,C.cg,new D.qL(new S.h6(s,new X.G3(new L.py("logo.png",s,s),s,s,s,C.a9,s,C.bY,!1),s,s,s,s,C.ak),32,32,s),C.b7,s,0,s,s,s,s,C.R),T.b9(s,s,8),L.cJ("Chatsen",s,s,s,s,A.dn(s,s,s,s,s,s,s,s,s,s,s,16,s,C.bD,s,s,!0,s,s,s,s,s,s,s,s),s,s)],q),C.H,C.N,C.aR),s),new R.ta(s),new T.b8(C.bV,T.e3(H.a([R.i2(!1,!0,Z.Zs(C.uB),s,!0,s,s,s,s,s,s,s,s,s,new A.aa1(),s,s,s),T.b9(s,s,24),R.i2(!1,!0,Z.Zs(C.uC),s,!0,s,s,s,s,s,s,s,s,s,new A.aa2(),s,s,s),T.b9(s,s,24),R.i2(!1,!0,Z.Zs(C.uE),s,!0,s,s,s,s,s,s,s,s,s,new A.aa3(),s,s,s)],q),C.H,C.N,C.aR),s)],q),C.H,C.N,C.Z),s,new S.aA(0,1024,0,1/0),s,64,s,s,s),s),C.t,r.q.e,0,s,s,s,s,C.R)}}
+return M.cq(C.u,s,new T.dT(C.a9,s,s,M.cw(s,T.e3(H.a([new T.b8(C.bV,T.e3(H.a([M.cq(C.u,C.cg,new D.qL(new S.h6(s,new X.G3(new L.py("assets/logo.png",s,s),s,s,s,C.a9,s,C.bY,!1),s,s,s,s,C.ak),32,32,s),C.b7,s,0,s,s,s,s,C.R),T.b9(s,s,8),L.cJ("Chatsen",s,s,s,s,A.dn(s,s,s,s,s,s,s,s,s,s,s,16,s,C.bD,s,s,!0,s,s,s,s,s,s,s,s),s,s)],q),C.H,C.N,C.aR),s),new R.ta(s),new T.b8(C.bV,T.e3(H.a([R.i2(!1,!0,Z.Zs(C.uB),s,!0,s,s,s,s,s,s,s,s,s,new A.aa1(),s,s,s),T.b9(s,s,24),R.i2(!1,!0,Z.Zs(C.uC),s,!0,s,s,s,s,s,s,s,s,s,new A.aa2(),s,s,s),T.b9(s,s,24),R.i2(!1,!0,Z.Zs(C.uE),s,!0,s,s,s,s,s,s,s,s,s,new A.aa3(),s,s,s)],q),C.H,C.N,C.aR),s)],q),C.H,C.N,C.Z),s,new S.aA(0,1024,0,1/0),s,64,s,s,s),s),C.t,r.q.e,0,s,s,s,s,C.R)}}
 A.aa1.prototype={
 $0:function(){return T.mC("https://discord.gg/5G8hpgHkXB")},
 $S:0}
