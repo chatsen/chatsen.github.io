@@ -13,12 +13,13 @@ const RESOURCES = {
 "assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf": "3241d1d9c15448a4da96df05f3292ffe",
 "assets/packages/font_awesome_flutter/lib/fonts/fa-regular-400.ttf": "eaed33dc9678381a55cb5c13edaf241d",
 "assets/packages/font_awesome_flutter/lib/fonts/fa-solid-900.ttf": "ffed6899ceb84c60a1efa51c809a57e4",
+"favicon.ico": "37411c1946ee083a7bff6504d79e26be",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"index.html": "fde3f3618c2a0062b79cdbc07e66df2c",
-"/": "fde3f3618c2a0062b79cdbc07e66df2c",
-"main.dart.js": "f668823e7209532583e0b466fda11b78",
+"index.html": "34011a0fe6e3e0fade0dd38616eadd53",
+"/": "34011a0fe6e3e0fade0dd38616eadd53",
+"main.dart.js": "a9125b2c9ae5f535c5d4b2d62c0fa4a7",
 "manifest.json": "ee21b31c3a008e52e0510ef08c6b6b8b",
 "version.json": "6d979defadd1b7155130fa1305fafeca"
 };
