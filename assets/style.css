@@ -13,7 +13,7 @@ body{padding:0;margin:0;font-family:"Open Sans", "Helvetica Neue", Helvetica, Ar
 a{color:#1e6bb8;text-decoration:none}a:hover{text-decoration:underline}
 .btn{display:inline-block;text-decoration:none;margin-bottom:1rem;color:black;background-color:#ffc107;border:none;border-radius:64px;transition:color 0.2s, background-color 0.2s, border-color 0.2s}
 .btn:hover{text-decoration:none;background-color:#ffd300;box-shadow:0 0 5px 3px #000}
-.btn:active {background-color:#ff4f53;box-shadow:0 0 5px 3px #000}
+.btn:active {background-color:#ffc107;box-shadow:0 0 5px 3px #000}
 .btn+.btn{margin-left:1rem}
 
 .restrict-size{padding:1rem 2rem}
@@ -60,7 +60,7 @@ main{background-color:#212121}
 .main-content dl{padding:0}.main-content dl dt{padding:0;margin-top:1rem;font-size:1rem;font-weight:bold}.main-content dl dd{padding:0;margin-bottom:1rem}
 .main-content hr{height:2px;padding:0;margin:1rem 0;background-color:#eff0f1;border:0}
 .site-footer-credits a,.project-links a{color:white;font-size:1.8rem}
-.site-footer-credits a:hover,.project-links a:hover{color:#ff4f53}
+.site-footer-credits a:hover,.project-links a:hover{color:#ffc107}
 .site-footer-credits a+a,.project-links a+a { margin-left: 1.0rem }
 .header-navigation{display:flex;justify-content:space-between;align-items:center;padding:1rem 2rem}
 .project-logo img{width:48px;border-radius:50%;vertical-align:middle;margin-right:0.5rem}
