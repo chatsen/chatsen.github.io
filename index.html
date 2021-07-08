@@ -1,114 +1,125 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-<meta charset="UTF-8">
-<title>Chatsen</title>
-<link rel="icon" href="favicon.ico">
-<meta property="og:description" content="Chatsen is a cross-platform Twitch chat application with support for BTTV, FFZ, and 7TV.">
-<meta property="og:url" content="https://chatsen.app/">
-<meta property="og:image" content="https://chatsen.github.io/assets/logo.png">
-<meta property="twitter:image" content="https://chatsen.github.io/assets/logo.png">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" referrerpolicy="no-referrer">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#212121">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<link rel="stylesheet" href="assets/style.css" type="text/css">
-</head>
-<body>
-<a id="skip-to-content" href="#content">Skip to the content.</a>
 
-<header class="page-header" role="banner">
-  <div class="header-navigation restrict-size">
+<head>
+  <meta charset="UTF-8">
+  <title>Chatsen</title>
+  <link rel="icon" href="favicon.ico">
+  <meta property="og:description"
+    content="Chatsen is a cross-platform Twitch chat application with support for BTTV, FFZ, and 7TV.">
+  <meta property="og:url" content="https://chatsen.app/">
+  <meta property="og:image" content="https://chatsen.github.io/assets/logo.png">
+  <meta property="twitter:image" content="https://chatsen.github.io/assets/logo.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style"
+    type="text/css" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#212121">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="stylesheet" href="assets/style.css" type="text/css">
+</head>
+
+<body>
+  <a id="skip-to-content" href="#content">Skip to the content.</a>
+
+  <header class="page-header" role="banner">
+    <div class="header-navigation restrict-size">
       <div class="project-logo">
-          <img src="assets/logo.png" alt="Chatsen"> Chatsen
+        <img src="assets/logo.png" alt="Chatsen"> Chatsen
       </div>
       <div class="project-links">
-          <a href="https://discord.gg/5G8hpgHkXB" title="Discord"><i class="fab fa-discord"></i></a>
-          <a href="https://www.patreon.com/chatsen" title="Patreon"><i class="fab fa-patreon"></i></a>
-          <a href="https://github.com/chatsen/chatsen" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://discord.gg/5G8hpgHkXB" title="Discord"><i class="fab fa-discord"></i></a>
+        <a href="https://www.patreon.com/chatsen" title="Patreon"><i class="fab fa-patreon"></i></a>
+        <a href="https://github.com/chatsen/chatsen" title="GitHub"><i class="fab fa-github"></i></a>
       </div>
-  </div>
- <div class="page-header-center restrict-size">
-  <div class="project-summary">
-    <h1 class="project-name">Chat on the go</h1>
-    <h2 class="project-tagline">Chatsen is a cross-platform application that allows you to
-    chat on Twitch with support for 3rd-party services such as 7TV, BTTV, and FFZ.</h2>
-    <a href="https://github.com/chatsen/chatsen/releases/latest" class="btn">
-        <i class="fas fa-download"></i>
-        Download <span id="os-helper"></span></a>
-    <a href="https://play.google.com/store/apps/details?id=com.chatsen.chatsen" class="btn">
-        <i class="fab fa-android"></i> Android</a>
-    <a href="https://testflight.apple.com/join/I7Fm27MH" class="btn">
-        <i class="fab fa-apple"></i> iOS</a>
-    <p id="latest-version"></p>
-  </div>
-  <div><span class="screenshot mobile-outline"><img src="assets/screenshot.jpg" alt="Chatsen in action"></span></div>
- </div>
-</header>
+    </div>
+    <div class="page-header-center restrict-size">
+      <div class="project-summary">
+        <h1 class="project-name">Chat on the go</h1>
+        <h2 class="project-tagline">Chatsen is a cross-platform application that allows you to
+          chat on Twitch with support for 3rd-party services such as 7TV, BTTV, and FFZ.</h2>
+        <!-- <a href="https://github.com/chatsen/chatsen/releases/latest" class="btn">
+          <i class="fas fa-download"></i>
+          Download <span id="os-helper"></span></a> -->
+        <a href="https://play.google.com/store/apps/details?id=com.chatsen.chatsen" class="btn">
+          <i class="fab fa-android"></i> Android</a>
+        <a href="https://testflight.apple.com/join/I7Fm27MH" class="btn">
+          <i class="fab fa-apple"></i> iOS</a>
+        <p id="latest-version"></p>
+      </div>
+      <div><span class="screenshot mobile-outline"><img src="assets/screenshot.jpg" alt="Chatsen in action"></span>
+      </div>
+    </div>
+  </header>
 
-<main id="content" class="main-content" role="main"><div class="restrict-size">
-    <h3>Features</h3>
+  <main id="content" class="main-content" role="main">
+    <div class="restrict-size">
+      <h3>Features</h3>
 
-    <h4>Have it your way</h4>
-    <p>With a various selection of colors and other customizable options, you are free to configure Chatsen the way you prefer!
-    Dark and light theme included.
+      <h4>Have it your way</h4>
+      <p>With a various selection of colors and other customizable options, you are free to configure Chatsen the way
+        you prefer!
+        Dark and light theme included.
 
-    <h4>It's got it all</h4>
-    <p>With support for 7TV, BTTV, and FFZ, you will never have to see ZULUL and
-    other emotes as text in chat! Search for emotes and browse what the channels
-    you visit have at their disposal.
+      <h4>It's got it all</h4>
+      <p>With support for 7TV, BTTV, and FFZ, you will never have to see ZULUL and
+        other emotes as text in chat! Search for emotes and browse what the channels
+        you visit have at their disposal.
 
-    <h4>Never miss out on anything</h4>
-    <p>Join up to 4500 channels at the same time and get notified when you get
-    mentioned or receive a whisper. We've even got a mentions menu to help you
-    not miss important messages!
+      <h4>Never miss out on anything</h4>
+      <p>Join up to 4500 channels at the same time and get notified when you get
+        mentioned or receive a whisper. We've even got a mentions menu to help you
+        not miss important messages!
 
-    <h4>Watch your favorite streamers</h4>
-    <p>With a built-in video player, you can watch a streamer and chat in
-    multiple channels simultaneously!
-
-</div></main>
-<footer class="site-footer">
-  <div class="footer-content restrict-size">
-    <span class="site-footer-owner">Created by <a href="https://github.com/williambulin">williambulin</a></span>
-    <span class="site-footer-credits"><a href="https://twitter.com/chatsenapp" title="Twitter"><i class="fab fa-twitter"></i></a></span>
-  </div>
-</footer>
-<!-- Website by @cbdg https://raccatta.cc -->
-<script>
-const ua = navigator.userAgent || '';
-const osHelper = document.getElementById('os-helper');
-// TODO: at some point we'll use this to point at the right download for your
-// platform
-if (ua.match(/\bAndroid\b/)) {
-  osHelper.textContent = `for Android`;
-} else if (ua.match(/\bWindows\b/)) {
-  osHelper.textContent = `for Windows`;
-} else if (ua.match(/\biPad\b/)) {
-  osHelper.textContent = `for iPad`;
-} else if (ua.match(/\biPhone\b/)) {
-  osHelper.textContent = `for iPhone`;
-} else if (ua.match(/\bMac OS\b/)) {
-  osHelper.textContent = `for Mac`;
-} else if (ua.match(/\bLinux\b/)) {
-  osHelper.textContent = `for Linux`;
-}
-const latestVersion = document.getElementById('latest-version');
-if (sessionStorage && sessionStorage.versionText)
-  latestVersion.textContent = sessionStorage.versionText;
-else
-  fetch('https://api.github.com/repos/chatsen/chatsen/releases/latest').
-    then(rsp => {
-      if (!rsp.ok) throw "Couldn't get latest Chatsen version";
-      return rsp.json();
-    }).then(v => {
-      const pub = new Intl.DateTimeFormat().format(new Date(v.published_at));
-        const txt = `Latest version: ${v.name} released on ${pub}`;
-      latestVersion.textContent = txt;
-      sessionStorage.versionText = txt;
-    });
-</script>
+      <h4>Watch your favorite streamers</h4>
+      <p>With a built-in video player, you can watch a streamer and chat in
+        multiple channels simultaneously!
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-content restrict-size">
+      <span class="site-footer-owner">Created by <a href="https://github.com/williambulin">williambulin</a></span>
+      <span class="site-footer-credits"><a href="https://twitter.com/chatsenapp" title="Twitter"><i
+            class="fab fa-twitter"></i></a></span>
+    </div>
+  </footer>
+  <!-- Website by @cbdg https://raccatta.cc -->
+  <script>
+    const ua = navigator.userAgent || '';
+    const osHelper = document.getElementById('os-helper');
+    // TODO: at some point we'll use this to point at the right download for your
+    // platform
+    if (ua.match(/\bAndroid\b/)) {
+      osHelper.textContent = `for Android`;
+    } else if (ua.match(/\bWindows\b/)) {
+      osHelper.textContent = `for Windows`;
+    } else if (ua.match(/\biPad\b/)) {
+      osHelper.textContent = `for iPad`;
+    } else if (ua.match(/\biPhone\b/)) {
+      osHelper.textContent = `for iPhone`;
+    } else if (ua.match(/\bMac OS\b/)) {
+      osHelper.textContent = `for Mac`;
+    } else if (ua.match(/\bLinux\b/)) {
+      osHelper.textContent = `for Linux`;
+    }
+    const latestVersion = document.getElementById('latest-version');
+    if (sessionStorage && sessionStorage.versionText)
+      latestVersion.textContent = sessionStorage.versionText;
+    else
+      fetch('https://api.github.com/repos/chatsen/chatsen/releases/latest').
+        then(rsp => {
+          if (!rsp.ok) throw "Couldn't get latest Chatsen version";
+          return rsp.json();
+        }).then(v => {
+          const pub = new Intl.DateTimeFormat().format(new Date(v.published_at));
+          const txt = `Latest version: ${v.name} released on ${pub}`;
+          latestVersion.textContent = txt;
+          sessionStorage.versionText = txt;
+        });
+  </script>
 </body>
+
 </html>

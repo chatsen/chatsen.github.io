@@ -61,11 +61,11 @@ main{background-color:#212121}
 .main-content hr{height:2px;padding:0;margin:1rem 0;background-color:#eff0f1;border:0}
 .site-footer-credits a,.project-links a{color:white;font-size:1.8rem}
 .site-footer-credits a:hover,.project-links a:hover{color:#ff4f53}
-.site-footer-credits a+a,.project-links a+a { margin-left: 0.5rem }
-.header-navigation{display:flex;justify-content:space-between;align-items:center}
-.project-logo img{width:64px;border-radius:50%;vertical-align:middle;margin-right:0.5rem}
+.site-footer-credits a+a,.project-links a+a { margin-left: 1.0rem }
+.header-navigation{display:flex;justify-content:space-between;align-items:center;padding:1rem 2rem}
+.project-logo img{width:48px;border-radius:50%;vertical-align:middle;margin-right:0.5rem}
 .project-logo{font-weight:bold}
 
 .site-footer-owner{display:block;font-weight:bold}
 .site-footer-credits{color:#819198}
-.footer-content{display:flex;align-items:center;justify-content:space-between}
+.footer-content{display:flex;align-items:center;justify-content:space-between;padding:1rem 2rem}
