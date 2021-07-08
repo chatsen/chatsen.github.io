@@ -89,22 +89,22 @@
   <!-- Website by @cbdg https://raccatta.cc -->
   <script>
     const ua = navigator.userAgent || '';
-    const osHelper = document.getElementById('os-helper');
-    // TODO: at some point we'll use this to point at the right download for your
-    // platform
-    if (ua.match(/\bAndroid\b/)) {
-      osHelper.textContent = `for Android`;
-    } else if (ua.match(/\bWindows\b/)) {
-      osHelper.textContent = `for Windows`;
-    } else if (ua.match(/\biPad\b/)) {
-      osHelper.textContent = `for iPad`;
-    } else if (ua.match(/\biPhone\b/)) {
-      osHelper.textContent = `for iPhone`;
-    } else if (ua.match(/\bMac OS\b/)) {
-      osHelper.textContent = `for Mac`;
-    } else if (ua.match(/\bLinux\b/)) {
-      osHelper.textContent = `for Linux`;
-    }
+    // const osHelper = document.getElementById('os-helper');
+    // // TODO: at some point we'll use this to point at the right download for your
+    // // platform
+    // if (ua.match(/\bAndroid\b/)) {
+    //   osHelper.textContent = `for Android`;
+    // } else if (ua.match(/\bWindows\b/)) {
+    //   osHelper.textContent = `for Windows`;
+    // } else if (ua.match(/\biPad\b/)) {
+    //   osHelper.textContent = `for iPad`;
+    // } else if (ua.match(/\biPhone\b/)) {
+    //   osHelper.textContent = `for iPhone`;
+    // } else if (ua.match(/\bMac OS\b/)) {
+    //   osHelper.textContent = `for Mac`;
+    // } else if (ua.match(/\bLinux\b/)) {
+    //   osHelper.textContent = `for Linux`;
+    // }
     const latestVersion = document.getElementById('latest-version');
     if (sessionStorage && sessionStorage.versionText)
       latestVersion.textContent = sessionStorage.versionText;
