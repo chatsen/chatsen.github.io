@@ -290,26 +290,26 @@ z-index: -1;
 }
 
 .slider__item--1 {
-background-image: url("https://i.nuuls.com/2cbDp.png");
+background-image: url("https://raw.githubusercontent.com/ayyybubu/chatsen.github.io/master/assets/screen1.png");
 background-size: 100%;
 width: 100%;
 height: auto;
 }
 .slider__item--2 {
-  background-image: url("https://i.nuuls.com/5zadW.png");
+  background-image: url("https://raw.githubusercontent.com/ayyybubu/chatsen.github.io/master/assets/screen3.png");
   background-size: 100%;
   width: 100%;
   height: auto;
 }
 .slider__item--3 {
-  background-image: url("https://i.nuuls.com/Km27p.png");
+  background-image: url(https://raw.githubusercontent.com/ayyybubu/chatsen.github.io/master/assets/screen4.png");
   background-size: 100%;
   width: 100%;
   height: auto;
 }
 
 .slider__item--4 {
-  background-image: url("https://i.nuuls.com/5_Ddd.png");
+  background-image: url("https://raw.githubusercontent.com/ayyybubu/chatsen.github.io/master/assets/screen2.png");
   background-size: 100%;
   width: 100%;
   height: auto;
