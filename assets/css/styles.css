@@ -302,7 +302,7 @@ height: auto;
   height: auto;
 }
 .slider__item--3 {
-  background-image: url(https://raw.githubusercontent.com/ayyybubu/chatsen.github.io/master/assets/screen4.png");
+  background-image: url("https://raw.githubusercontent.com/ayyybubu/chatsen.github.io/master/assets/screen4.png");
   background-size: 100%;
   width: 100%;
   height: auto;
