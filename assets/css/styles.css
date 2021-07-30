@@ -134,13 +134,14 @@ a {
 
     color: inherit; 
 } 
-h5{
+h5, .bottomscroll{
     color: rgb(255, 255, 255);
     text-decoration: none;
     padding: -40px;
     font-size: 25px;
     text-align: center;    
     margin-bottom: 10rem;
+    font-weight: bold;
 
 }
 .main-content h1,.main-content h2,.main-content h3,.main-content h4,.main-content h6{
@@ -251,7 +252,7 @@ margin-top: 10rem;}
    -webkit-background-size: 100% 100%;
 
    background-repeat: no-repeat;
-         background-image: url(https://github.com/ayyybubu/chatsen.github.io/blob/master/assets/phone.png?raw=true);
+         background-image: url(https://i.nuuls.com/ayHG_.png);
  background-size: 80%;
    background-position: center center;
 
@@ -290,26 +291,26 @@ z-index: -1;
 }
 
 .slider__item--1 {
-background-image: url("https://raw.githubusercontent.com/ayyybubu/chatsen.github.io/master/assets/screen1.png");
+background-image: url("https://i.nuuls.com/2cbDp.png");
 background-size: 100%;
 width: 100%;
 height: auto;
 }
 .slider__item--2 {
-  background-image: url("https://raw.githubusercontent.com/ayyybubu/chatsen.github.io/master/assets/screen3.png");
+  background-image: url("https://i.nuuls.com/5zadW.png");
   background-size: 100%;
   width: 100%;
   height: auto;
 }
 .slider__item--3 {
-  background-image: url("https://raw.githubusercontent.com/ayyybubu/chatsen.github.io/master/assets/screen4.png");
+  background-image: url("https://i.nuuls.com/Km27p.png");
   background-size: 100%;
   width: 100%;
   height: auto;
 }
 
 .slider__item--4 {
-  background-image: url("https://raw.githubusercontent.com/ayyybubu/chatsen.github.io/master/assets/screen2.png");
+  background-image: url("https://i.nuuls.com/5_Ddd.png");
   background-size: 100%;
   width: 100%;
   height: auto;
