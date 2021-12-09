@@ -1,0 +1,104 @@
+/* Import FontAwesome 6 CSS */
+@import url("https://use.fontawesome.com/releases/v6.0.0-beta3/css/all.css");
+
+/* Import Product Sans font */
+@import url("http://fonts.googleapis.com/css?family=Product+Sans:400,700");
+
+@import url("theme.css");
+
+/* Use Product Sans */
+body {
+  font-family: 'Product Sans', sans-serif;
+}
+
+/* Remove default html padding */
+html, body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--background-color);
+  color: var(--color);
+}
+
+a {
+  color: var(--color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Adjust font size on mobile devices */
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 0.8em;
+  }
+}
+
+html {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1024px;
+}
+
+.padding {
+  margin: 1em 2em;
+}
+
+header {
+  width: 100%;
+}
+
+header .row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+header .logo {
+  width: 3em;
+  height: 3em;
+}
+
+header .spacer {
+  flex: 1;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+header .fa-brands {
+  font-size: 2em;
+}
+
+main h2 {
+  font-weight: normal;
+}
+
+main .button-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+main .button {
+  font-size: 1.5em;
+  font-weight: normal;
+
+  padding: 0.5em;
+
+  border: 0.1em solid var(--color);
+  border-radius: 0.5em;
+
+  transition: all 0.2s ease-in-out;
+}
+
+main .button:hover {
+  background-color: var(--color);
+  color: var(--background-color);
+}
