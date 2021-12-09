@@ -178,15 +178,18 @@ main .grid .phone-row {
 }
 
 main .grid .phone {
-  /* perspective: 1600px; */
-  /* transform: rotateX(10deg) rotateY(336deg) rotateZ(5deg); */
-      /* transform: perspective(1600px) rotate3d(.1, -.1, .03, 20deg); */
-  transform: perspective(1500px) scaleX(1) scaleY(1) scaleZ(1) rotateX(11deg) rotateY(-11deg) rotateZ(4deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg);
+  transform: perspective(1500px) rotateX(11deg) rotateY(-11deg) rotateZ(4deg);
   background: linear-gradient(135deg, #D81554DD, #F6623EDD), linear-gradient(to right, var(--background-color), var(--background-color));
   border-radius: 1em;
   width: 60%;
   margin: 4em 0em;
   padding: 2px;
+}
+
+@media not all and (min-resolution:.001dpcm) {
+  main .grid .phone {
+    transform: none;
+  }
 }
 
 /* On mobile devices */
