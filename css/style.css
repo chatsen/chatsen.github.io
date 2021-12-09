@@ -35,7 +35,7 @@ body .background {
 body .background-filter {
   backdrop-filter: blur(2em);
   -webkit-backdrop-filter: blur(2em);
-  background-color: rgba(var(--background), 0.5);
+  background-color: rgba(var(--background), 0.75);
   margin: auto;
 }
 
@@ -114,8 +114,12 @@ footer {
 }
 
 main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   text-align: center;
-  gap: -1em;
+  align-items: center;
+  justify-items: center;
+  gap: 1em;
 }
 
 main h2 {
@@ -145,6 +149,28 @@ main .button {
 main .button:hover {
   background-color: var(--on-background-color);
   color: var(--background-color);
+}
+
+main .phone-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+main .phone {
+  background: linear-gradient(to right, #D81554, #F6623E);
+  border-radius: 1em;
+  width: 50%;
+  margin: 1em;
+  padding: 4px;
+}
+
+main .phone .content {
+  border-radius: 1em;
+  width: 100%;
+  height: 100%;
+  background-color: blue;
 }
 
 .theme-button {
