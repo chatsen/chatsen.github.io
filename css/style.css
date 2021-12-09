@@ -5,6 +5,7 @@
 @import url("https://fonts.googleapis.com/css?family=Product+Sans:400,700");
 
 @import url("theme.css");
+@import url("scrollbar.css");
 
 /* Remove default html padding */
 html, body {
@@ -25,31 +26,10 @@ html {
   align-items: stretch;
 }
 
-/* width */
-::-webkit-scrollbar {
-  width: 0.4em;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: rgba(var(--on-background), 0.25);
-  border-radius: 2em;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(var(--on-background), 0.5);
-}
-
 body .background {
   background-image: url("../assets/logo.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
   background-size: contain;
 }
 
@@ -139,13 +119,14 @@ footer {
 }
 
 main .grid {
-  min-height: 75vh;
+  /* min-height: 75vh; */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   text-align: center;
   align-items: center;
   justify-items: center;
   gap: 1em;
+  /* margin: 4em 0em; */
 }
 
 main .grid h1 {
@@ -187,7 +168,6 @@ main .grid .tagline {
   align-items: center;
   justify-content: center;
   gap: 0em;
-  margin: 4em 2em;
 }
 
 main .grid .phone-row {
@@ -200,8 +180,8 @@ main .grid .phone-row {
 main .grid .phone {
   background: linear-gradient(135deg, #D81554DD, #F6623EDD), linear-gradient(to right, var(--background-color), var(--background-color));
   border-radius: 1em;
-  width: 50%;
-  margin: 1em;
+  width: 60%;
+  margin: 4em 0em;
   padding: 2px;
 }
 
@@ -218,8 +198,7 @@ main .features {
   justify-content: center;
   flex-wrap: wrap;
   text-align: center;
-
-  margin: 4em 0em;
+  margin: 2em 0em;
 }
 
 main .features h3 {
