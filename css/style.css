@@ -6,23 +6,56 @@
 
 @import url("theme.css");
 
-/* Use Product Sans */
-body {
-  font-family: 'Product Sans', sans-serif;
-}
-
 /* Remove default html padding */
 html, body {
   padding: 0;
   margin: 0;
+}
+
+html {
+  /* Use Product Sans */
+  font-family: 'Product Sans', sans-serif;
+
   background-color: var(--background-color);
-  color: var(--color);
+  color: var(--on-background-color);
+
+  /* Used to center the body */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+body .background {
+  background-image: url("../assets/logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+body .background-filter {
+  backdrop-filter: blur(2em);
+  -webkit-backdrop-filter: blur(2em);
+  background-color: rgba(var(--background), 0.5);
+  margin: auto;
+}
+
+body .content-padding {
+  padding: 1em 2em;
+}
+
+body .content-size {
+  max-width: 1024px;
+  margin: auto;
 }
 
 a {
-  color: var(--color);
+  color: var(--on-background-color);
   text-decoration: none;
   font-weight: bold;
+}
+
+* {
+  transition: all 0.05s linear;
 }
 
 /* Adjust font size on mobile devices */
@@ -32,51 +65,60 @@ a {
   }
 }
 
-html {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 1024px;
-}
-
-.padding {
-  margin: 1em 2em;
-}
-
 header {
   width: 100%;
 }
 
-header .row {
+footer {
+  width: 100%;
+}
+
+.header-row {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
+
+  flex-wrap: wrap;
   gap: 1em;
 }
 
-header .row h2 {
-  margin: 0;
+.header-row .logo-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  flex-wrap: nowrap;
+  gap: 0.25em;
 }
 
-header .logo {
+.header-row h3 {
+  margin: 0;
+  font-weight: normal;
+  /* Align font top */
+  vertical-align: text-top;
+  text-align: center;
+}
+
+.header-row .logo {
   width: 3em;
   height: 3em;
 }
 
-header .spacer {
+.header-row .spacer {
   flex: 1;
   flex-grow: 1;
   flex-shrink: 0;
 }
 
-header .fa-brands {
+.header-row .fa-brands {
   font-size: 2em;
+}
+
+main {
+  text-align: center;
+  gap: -1em;
 }
 
 main h2 {
@@ -88,6 +130,8 @@ main .button-row {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+
+  flex-wrap: wrap;
   gap: 1em;
 }
 
@@ -97,13 +141,11 @@ main .button {
 
   padding: 0.5em;
 
-  border: 0.1em solid var(--color);
+  border: 0.1em solid var(--on-background-color);
   border-radius: 0.5em;
-
-  transition: all 0.2s ease-in-out;
 }
 
 main .button:hover {
-  background-color: var(--color);
+  background-color: var(--on-background-color);
   color: var(--background-color);
 }

@@ -1,4 +1,10 @@
 :root {
-  --background-color: black;
-  --color: white;
+  --white: 255, 255, 255;
+  --black: 0, 0, 0;
+
+  --background: var(--black);
+  --on-background: var(--white);
+
+  --background-color: rgb(var(--background));
+  --on-background-color: rgb(var(--on-background));
 }
