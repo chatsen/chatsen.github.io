@@ -57,6 +57,11 @@ header .row {
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 1em;
+}
+
+header .row h2 {
+  margin: 0;
 }
 
 header .logo {
