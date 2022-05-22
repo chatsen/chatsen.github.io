@@ -5,6 +5,7 @@ class Chatsen {
 
   async link(token, code) {
     let response = await fetch(`${this.endpoint}/link`, {
+      method: 'GET',
       headers: {
         'Authorization': token,
         'Code': code,
@@ -15,6 +16,7 @@ class Chatsen {
 
   async unlink(token) {
     let response = await fetch(`${this.endpoint}/unlink`, {
+      method: 'GET',
       headers: {
         'Authorization': token,
       },
@@ -24,6 +26,7 @@ class Chatsen {
 
   async check(token) {
     let response = await fetch(`${this.endpoint}/check`, {
+      method: 'GET',
       headers: {
         'Authorization': token,
       },
