@@ -1,0 +1,3 @@
+[submodule "kyouyuu"]
+	path = kyouyuu
+	url = https://github.com/williambulin/kyouyuu

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatsen</title>
+  <style>
+    @import url('/css/pages/profile.css');
+  </style>
+</head>
+
+<body>
+
+  <include src="/html/background.html"></include>
+  <include src="/html/components/header.html"></include>
+
+  <main>
+    <div class="container">
+      <div class="contained contained-small content-padding">
+        <h1>Profile</h1>
+        <div id="profile" style="display: flex; background-color: rgba(var(--on-background), 0.1); backdrop-filter: blur(2em); border-radius: 1em; height: 4em; padding: 1em; gap: 1em;">
+          <img id="profile-avatar" alt="Avatar" src="https://cdn.betterttv.net/emote/60477a2f306b602acc599abf/3x" class="avatar" style="border-radius: 100%; background-color: rgba(var(--on-background), 0.1);">
+          <div style="display: flex; flex-direction: column;">
+            <h3 id="profile-name" style="margin: auto"><span id="profile-name-username">forsen</span><span id="profile-name-userid" style="color: rgba(var(--on-background), 0.5);">#22484632</span></h3>
+          </div>
+        </div>
+        <h2>Link with Patreon</h2>
+        <p>In order to link your Twitch account with your Patreon account and be able to manage your badges, you have to first Login via Patreon with the button below.</p>
+        <div style="height: 1em"></div>
+        <a id="login-with-patreon-button" target="_blank" rel="noreferrer" href="#" class="login-with-patreon"><i class="fab fa-patreon"></i>  Loading...</a>
+      </div>
+    </div>
+  </main>
+
+  <include src="/html/components/footer.html"></include>
+
+</body>
+
+<script type='module' src='/kyouyuu/js/injector.js'></script>
+<script type='module' src='/js/pages/profile.js'></script>
+
+</html>

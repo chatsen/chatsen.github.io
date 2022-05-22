@@ -1,0 +1,13 @@
+@import url('/kyouyuu/css/style.css');
+@import url('/kyouyuu/css/components/background.css');
+
+.login-with-patreon {
+  padding: 0.75em calc(0.75em * 2);
+  background-color: #FF424D;
+  color: #FFFFFF;
+  border-radius: 2em;
+}
+
+.login-with-patreon:hover {
+  background-color: #FF7070;
+}
