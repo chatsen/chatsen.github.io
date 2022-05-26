@@ -27,7 +27,7 @@ storage.addListener((key, value) => {
 });
 
 loginButton.onclick = async () => {
-  let url = 'https://id.twitch.tv/oauth2/authorize?client_id=vvxbprk8sfufgzd7k9wwr1478znf7b&redirect_uri=https://chatsen.app/oauth&response_type=token';
+  let url = `https://id.twitch.tv/oauth2/authorize?client_id=vvxbprk8sfufgzd7k9wwr1478znf7b&redirect_uri=${window.location.origin}/oauth&response_type=token`;
   window.open(url, '_blank', 'location=no,height=600,width=600,scrollbars=yes,status=yes');
 };
 

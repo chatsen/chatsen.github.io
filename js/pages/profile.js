@@ -40,7 +40,7 @@ storage.addListener((key, value) => {
 });
 
 async function link() {
-  let url = 'https://www.patreon.com/oauth2/authorize?response_type=code&client_id=ZnOByLFZZzeZqdZIQsS2_ExwDCSWBfQAT3-5zta6hvNJEi0K8ShxWr52bJkzU4UF&redirect_uri=https://chatsen.app/link';
+  let url = `https://www.patreon.com/oauth2/authorize?response_type=code&client_id=ZnOByLFZZzeZqdZIQsS2_ExwDCSWBfQAT3-5zta6hvNJEi0K8ShxWr52bJkzU4UF&redirect_uri=${window.location.origin}/link`;
   let oauthWindow = window.open(url, '_blank', 'location=no,height=600,width=600,scrollbars=yes,status=yes');
   let timer = setInterval(() => {
     if (!oauthWindow.closed)
