@@ -111,3 +111,49 @@
   border: 0.1em solid var(--on-background-color);
   border-radius: 0.5em;
 }
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 1em;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: start;
+  /* border: 0.1em solid var(--on-background-color); */
+  padding: 2em;
+  background-color: rgba(var(--on-background), 0.1);
+  backdrop-filter: blur(2em);
+  border-radius: 1em;
+  gap: 1.5em;
+}
+
+@media only screen and (max-width: 685px) {
+  .feature-grid {
+    grid-template-columns: 100%;
+  }
+}
+
+.feature-card .icon {
+  font-size: 3em;
+  padding: 0;
+  margin: 0;
+}
+
+.feature-card h1 {
+  padding: 0;
+  margin: 0;
+}
+
+.feature-card h2 {
+  padding: 0;
+  margin: 0;
+}
+
+.feature-card h3 {
+  padding: 0;
+  margin: 0;
+}

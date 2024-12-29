@@ -11,6 +11,32 @@
   </style>
 </head>
 
+<script src="https://cdn.jsdelivr.net/npm/appwrite"></script>
+<script>
+  const client = new Appwrite.Client();
+
+  client.setEndpoint('https://cloud.appwrite.io/v1').setProject('chatsen');
+
+  const account = new Appwrite.Account(client);
+
+  (async function () {
+    const session = await account.getSession('current');
+    console.log(session.provider);
+    console.log(session.providerUid);
+    console.log(session.providerAccessToken);
+  })();
+
+  function pressme() {
+    account.createOAuth2Session(
+      Appwrite.OAuthProvider.Twitch,
+      'https://chatsen.app/',
+      'https://chatsen.app/no',
+      []
+    );
+  }
+
+</script>
+
 <body>
 
   <include src="/html/background.html"></include>
@@ -22,11 +48,19 @@
         <div class="home-flex">
           <div class="home-tagline">
             <h1 class="title">Chat on the go</h1>
-            <p class="description">Chatsen is a <a target="_blank" rel="noreferrer" href="https://twitch.tv">Twitch</a> chat application for iOS and Android with support for <a target="_blank" rel="noreferrer" href="https://7tv.app">7TV</a>, <a target="_blank" rel="noreferrer" href="https://betterttv.com">BTTV</a> and <a target="_blank" rel="noreferrer" href="https://frankerfacez.com">FFZ</a>.</p>
+            <p class="description">Chatsen is a <a target="_blank" rel="noreferrer" href="https://twitch.tv">Twitch</a>
+              chat application for iOS and Android with support for <a target="_blank" rel="noreferrer"
+                href="https://7tv.app">7TV</a>, <a target="_blank" rel="noreferrer"
+                href="https://betterttv.com">BTTV</a> and <a target="_blank" rel="noreferrer"
+                href="https://frankerfacez.com">FFZ</a>.</p>
             <div class="button-row">
-              <a target="_blank" rel="noreferrer" href="https://apps.apple.com/us/app/chatsen/id1574037007" class="button"><i class="fab fa-apple"></i> iOS</a>
-              <a target="_blank" rel="noreferrer" href="https://play.google.com/store/apps/details?id=com.chatsen.chatsen" class="button"><i class="fab fa-android"></i> Android</a>
+              <a target="_blank" rel="noreferrer" href="https://apps.apple.com/us/app/chatsen/id1574037007"
+                class="button"><i class="fab fa-apple"></i> iOS</a>
+              <a target="_blank" rel="noreferrer"
+                href="https://play.google.com/store/apps/details?id=com.chatsen.chatsen" class="button"><i
+                  class="fab fa-android"></i> Android</a>
             </div>
+            <button style="display: none" onclick="pressme()">Press me</button>
           </div>
           <div class="home-preview">
             <div class="phone-row">
@@ -56,14 +90,42 @@
 
         <div class="home-features">
           <h1 style="text-align: center;">Features</h1>
-          <h2>Have it your way</h2>
-          <h3>With a various selection of colors and other customizable options, you are free to configure Chatsen the way you prefer! Dark and light theme included.</h3>
-          <h2>It's got it all</h2>
-          <h3>With support for 7TV, BTTV, and FFZ, you will never have to see any emote as text in chat! Search for emotes and browse what the channels you visit have at their disposal.</h3>
-          <h2>Never miss out on anything</h2>
-          <h3>Join up to 4500 channels at the same time and get notified when you get mentioned or receive a whisper. We've even got a mentions menu to help you not miss important messages!</h3>
-          <h2>Watch your favorite streamers live on the go</h2>
-          <h3>With a built-in video player, you can watch a streamer and chat in multiple channels simultaneously!</h3>
+          <div class="feature-grid">
+            <div class="feature-card">
+              <span class="icon material-symbols-outlined">
+                palette
+              </span>
+              <h1>Have it your way</h1>
+              <h3>With a various selection of colors and other customizable options, you are free to configure Chatsen
+                the
+                way you prefer! Dark and light theme included.</h3>
+            </div>
+            <div class="feature-card">
+              <span class="icon material-symbols-outlined">
+                done_all
+              </span>
+              <h1>It's got it all</h1>
+              <h3>With support for 7TV, BTTV, and FFZ, you will never have to see any emote as text in chat! Search for
+                emotes and browse what the channels you visit have at their disposal.</h3>
+            </div>
+            <div class="feature-card">
+              <span class="icon material-symbols-outlined">
+                notifications
+              </span>
+              <h1>Never miss out on anything</h1>
+              <h3>Join up to 4500 channels at the same time and get notified when you get mentioned or receive a
+                whisper.
+                We've even got a mentions menu to help you not miss important messages!</h3>
+            </div>
+            <div class="feature-card">
+              <span class="icon material-symbols-outlined">
+                live_tv
+              </span>
+              <h1>Watch live on the go</h1>
+              <h3>With a built-in video player, you can watch a streamer and chat in multiple channels simultaneously!
+              </h3>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -75,5 +137,6 @@
 </body>
 
 <script type='module' src='/kyouyuu/js/injector.js'></script>
+<!-- <script type='module' src='/js/apis/appwrite/appwrite.js'></script> -->
 
 </html>
