@@ -128,7 +128,7 @@
   background-color: rgba(var(--on-background), 0.1);
   backdrop-filter: blur(2em);
   border-radius: 1em;
-  gap: 1.5em;
+  gap: 1em;
 }
 
 @media only screen and (max-width: 685px) {
