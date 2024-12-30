@@ -141,13 +141,19 @@
   }
 }
 
+.feature-header-title {
+  padding: 0;
+  margin: 1em;
+  font-size: 3em;
+  font-weight: bold;
+}
+
 .feature-card .icon {
   font-size: 3em;
   padding: 0;
   margin: 0;
   color: transparent;
-  background: linear-gradient(135deg, #D81554DD, #F6623EDD),
-    linear-gradient(to right, var(--background-color), var(--background-color));
+  background: linear-gradient(135deg, #D81554DD, #F6623EDD), linear-gradient(to right, var(--background-color), var(--background-color));
   background-clip: text;
 }
 
@@ -155,6 +161,7 @@
   padding: 0;
   margin: 0;
   font-size: 2em;
+  font-weight: bold;
 }
 
 .feature-card .subtext {
