@@ -1,5 +1,7 @@
 import { storage } from '/kyouyuu/js/storage.js';
 
+let header = document.getElementById('header');
+
 let loginButton = document.getElementById('login-button');
 let logoutButton = document.getElementById('logout-button');
 
@@ -36,3 +38,11 @@ logoutButton.onclick = async () => {
   storage.remove('patreonUser');
   window.location.href = '/';
 };
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 2) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+});

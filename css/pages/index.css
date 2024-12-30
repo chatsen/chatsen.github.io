@@ -123,7 +123,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  border: 0.1em solid rgba(var(--on-background), 0.1);
+  border: 0.075em solid rgba(var(--on-background), 0.1);
   padding: 2em;
   background-color: rgba(var(--on-background), 0.1);
   backdrop-filter: blur(2em);
@@ -132,7 +132,7 @@
 }
 
 .feature-card:hover {
-  border: 0.1em solid rgba(var(--on-background), 0.2);
+  border: 0.075em solid rgba(var(--on-background), 0.2);
 }
 
 @media only screen and (max-width: 685px) {

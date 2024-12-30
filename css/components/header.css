@@ -1,0 +1,17 @@
+header {
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(2em);
+  background-color: rgba(var(--background), 0.75);
+  /* border-bottom: 0.1em solid rgba(var(--on-background), 0.0); */
+  z-index: 9999;
+  border-bottom: 0.075em solid rgba(var(--on-background), 0.0);
+}
+
+header:hover {
+  border-bottom: 0.075em solid rgba(var(--on-background), 0.2) !important;
+}
+
+header.scrolled {
+  border-bottom: 0.075em solid rgba(var(--on-background), 0.1);
+}
