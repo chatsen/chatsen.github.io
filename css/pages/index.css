@@ -141,19 +141,21 @@
   font-size: 3em;
   padding: 0;
   margin: 0;
+  color: transparent;
+  background: linear-gradient(135deg, #D81554DD, #F6623EDD),
+    linear-gradient(to right, var(--background-color), var(--background-color));
+  background-clip: text;
 }
 
-.feature-card h1 {
+.feature-card .title {
   padding: 0;
   margin: 0;
+  font-size: 2em;
 }
 
-.feature-card h2 {
+.feature-card .subtext {
+  color: rgba(var(--on-background), 0.5);
   padding: 0;
   margin: 0;
-}
-
-.feature-card h3 {
-  padding: 0;
-  margin: 0;
+  font-size: 1.25em;
 }
